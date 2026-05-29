@@ -256,7 +256,7 @@ function HeroSection({
    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 
 /** Tech stack tags displayed as pills */
-const AI_TAGS = ["UNIVAE", "NexFlow", "AI APIs", "Spring Boot", "Next.js"];
+const AI_TAGS = ["UNIVAE", "NexFlow", "AI APIs", "Spring Boot", "Next.js", "Java", "Docker", "Prisma"];
 
 function AISystemsSection({
   scrollProgress,
@@ -513,6 +513,8 @@ const CAPABILITIES = [
   "Generative AI",
   "System Design",
   "Scalable Products",
+  "Data Structures",
+  "IoT Integrations",
 ];
 
 function FutureSection({

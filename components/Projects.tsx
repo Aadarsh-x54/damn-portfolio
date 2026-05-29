@@ -55,17 +55,32 @@ const projects: Project[] = [
   },
   {
     title: "Droppler",
-    subtitle: "Smart Water Monitoring System",
-    stack: ["Firebase", "IoT", "Automation"],
+    subtitle: "Smart Water Conservation Monitoring System",
+    stack: ["Firebase", "n8n", "IoT Sensors", "JavaScript"],
     features: [
-      "Live sensor monitoring",
-      "Smart automation",
-      "Real-time alerts",
+      "Live sensor monitoring pipeline",
+      "Threshold-based alerts",
+      "Automated event processing",
     ],
     gradient: "from-cyan-500/10 via-sky-500/8 to-blue-500/10",
     borderGradient: "from-cyan-500/40 via-blue-500/30 to-cyan-500/40",
     glowColor: "6, 182, 212",
     accentType: "pulse-rings",
+    link: "https://github.com/Aadarsh-x54",
+  },
+  {
+    title: "Smart Safety",
+    subtitle: "IoT Security Prototype (Hackathon Finalist)",
+    stack: ["Java", "IoT Sensors", "Hardware Integration"],
+    features: [
+      "Footprint-recognition security",
+      "Pressure-array sensor integration",
+      "Java-based monitoring software",
+    ],
+    gradient: "from-amber-500/10 via-orange-500/8 to-rose-500/10",
+    borderGradient: "from-amber-500/40 via-orange-500/30 to-amber-500/40",
+    glowColor: "245, 158, 11", // amber-500
+    accentType: "pulse-rings", // reuse pulse-rings or flow-lines
     link: "https://github.com/Aadarsh-x54",
   },
 ];
