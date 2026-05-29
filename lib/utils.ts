@@ -43,8 +43,8 @@ export const TOTAL_FRAMES = 84;
 
 /**
  * Format a frame index to the filename used in /public/sequence2/.
- * e.g., 0 → "/sequence2/frame_00_delay-0.071s.png"
+ * e.g., 0 → "/sequence2/frame_00_delay-0.071s.webp"
  */
 export function getFramePath(index: number): string {
-  return `/sequence2/frame_${String(index).padStart(2, "0")}_delay-0.071s.png`;
+  return `/sequence2/frame_${String(index).padStart(2, "0")}_delay-0.071s.webp`;
 }
