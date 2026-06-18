@@ -36,7 +36,23 @@ const projects: Project[] = [
     borderGradient: "from-blue-500/40 via-purple-500/30 to-blue-500/40",
     glowColor: "99, 102, 241",
     accentType: "neural-glow",
-    link: "https://github.com/Aadarsh-x54",
+    link: "https://github.com/Aadarsh-x54/univae",
+  },
+  {
+    title: "Engineers Pool",
+    subtitle: "RGPV & programming notes platform - Next.js + Spring Boot",
+    stack: ["Next.js", "Spring Boot", "Java", "MySQL", "Tailwind CSS"],
+    features: [
+      "Centralized academic resources & programming notes platform",
+      "Robust Spring Boot server integration with relational database storage",
+      "Modern Next.js web application with fast search and navigation UI",
+      "Integrated resource-sharing portal with download support",
+    ],
+    gradient: "from-blue-500/10 via-teal-500/8 to-indigo-500/10",
+    borderGradient: "from-blue-500/40 via-teal-500/30 to-blue-500/40",
+    glowColor: "59, 130, 246",
+    accentType: "flow-lines",
+    link: "https://github.com/Aadarsh-x54/engineers-pool",
   },
   {
     title: "NexFlow",
@@ -422,7 +438,7 @@ function ProjectCard({
           </ul>
 
           {/* Tech stack pills */}
-          <div className="flex flex-wrap gap-1.5 mb-6">
+          <div className="flex flex-wrap gap-1.5 mb-0">
             {project.stack.map((tech) => (
               <span
                 key={tech}
@@ -432,43 +448,6 @@ function ProjectCard({
               </span>
             ))}
           </div>
-
-          {/* CTA */}
-          <MagneticButton>
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 text-xs font-mono tracking-wider rounded-lg transition-all duration-300"
-              style={{
-                color: `rgb(${project.glowColor})`,
-                border: `1px solid rgba(${project.glowColor}, 0.25)`,
-                background: `rgba(${project.glowColor}, 0.04)`,
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.background = `rgba(${project.glowColor}, 0.1)`;
-                e.currentTarget.style.borderColor = `rgba(${project.glowColor}, 0.4)`;
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.background = `rgba(${project.glowColor}, 0.04)`;
-                e.currentTarget.style.borderColor = `rgba(${project.glowColor}, 0.25)`;
-              }}
-            >
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-              </svg>
-              View on GitHub
-            </a>
-          </MagneticButton>
         </div>
       </div>
     </motion.div>

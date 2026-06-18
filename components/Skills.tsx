@@ -16,10 +16,16 @@ const skillCategories: SkillCategory[] = [
     skills: [
       "Machine Learning",
       "Deep Learning",
-      "NLP",
+      "Neural Networks",
+      "NLP / LLMs",
       "Computer Vision",
-      "Generative AI",
       "Model Evaluation",
+      "PyTorch",
+      "TensorFlow",
+      "Scikit-Learn",
+      "RAG (Retrieval-Augmented Generation)",
+      "Prompt Engineering",
+      "Fine-Tuning",
     ],
     glowColor: "rgba(168, 85, 247, 0.15)", // Purple
     borderColor: "rgba(168, 85, 247, 0.3)",
@@ -42,7 +48,13 @@ const skillCategories: SkillCategory[] = [
   },
   {
     title: "Languages",
-    skills: ["Java", "Python", "C++", "JavaScript", "SQL"],
+    skills: [
+      "Python (AI / Data)",
+      "Java (Full-Stack)",
+      "C++",
+      "JavaScript / TypeScript",
+      "SQL",
+    ],
     glowColor: "rgba(99, 102, 241, 0.15)", // Indigo
     borderColor: "rgba(99, 102, 241, 0.3)",
     icon: (
@@ -97,13 +109,14 @@ const skillCategories: SkillCategory[] = [
     title: "DevOps & Cloud",
     skills: [
       "Docker",
-      "Git",
-      "GitHub",
+      "Git / GitHub",
       "Linux",
       "CI/CD",
-      "Vercel",
-      "Render",
+      "Vercel / Render",
       "Cloud Deployment",
+      "MLOps",
+      "ML Pipelines",
+      "Hugging Face",
     ],
     glowColor: "rgba(59, 130, 246, 0.15)", // Blue
     borderColor: "rgba(59, 130, 246, 0.3)",
@@ -125,7 +138,13 @@ const skillCategories: SkillCategory[] = [
   },
   {
     title: "Databases & Storage",
-    skills: ["MySQL", "PostgreSQL", "MongoDB", "SQLite", "H2"],
+    skills: [
+      "PostgreSQL",
+      "MySQL",
+      "MongoDB",
+      "Vector Databases (Pinecone/Chroma)",
+      "SQLite / H2",
+    ],
     glowColor: "rgba(6, 182, 212, 0.15)", // Cyan
     borderColor: "rgba(6, 182, 212, 0.3)",
     icon: (
@@ -150,17 +169,15 @@ const skillCategories: SkillCategory[] = [
     title: "Core CS & Data Tools",
     skills: [
       "Data Structures & Algorithms",
-      "OOP",
-      "DBMS",
-      "Operating Systems",
-      "Computer Networks",
+      "OOP (Object-Oriented Programming)",
+      "DBMS (Database Management)",
       "System Design",
       "Multithreading",
-      "NumPy",
-      "Pandas",
-      "EDA",
-      "Tableau",
-      "Power BI",
+      "Operating Systems & Networks",
+      "NumPy / Pandas",
+      "EDA (Exploratory Data Analysis)",
+      "Statistical Analysis",
+      "Tableau / Power BI",
     ],
     glowColor: "rgba(245, 158, 11, 0.15)", // Amber
     borderColor: "rgba(245, 158, 11, 0.3)",
