@@ -76,24 +76,24 @@ function HeroSection({
   /* ── Scroll-driven transforms ── */
   const rawOpacity = useTransform(
     scrollProgress,
-    [0, 0.04, 0.16, 0.24],
-    [0, 1, 1, 0]
+    [0, 0.16, 0.24],
+    [1, 1, 0]
   );
   const opacity = useSpring(rawOpacity, SPRING_CONFIG);
 
   /** First name moves slower (closer to camera) */
   const firstNameY = useTransform(
     scrollProgress,
-    [0, 0.04, 0.16, 0.24],
-    [50, 0, 0, -80]
+    [0, 0.16, 0.24],
+    [0, 0, -80]
   );
   const springFirstNameY = useSpring(firstNameY, SPRING_CONFIG);
 
   /** Last name moves faster (further from camera) — depth parallax */
   const lastNameY = useTransform(
     scrollProgress,
-    [0, 0.04, 0.16, 0.24],
-    [70, 0, 0, -120]
+    [0, 0.16, 0.24],
+    [0, 0, -120]
   );
   const springLastNameY = useSpring(lastNameY, SPRING_CONFIG);
 
@@ -107,44 +107,44 @@ function HeroSection({
   /** Subtitle fades in slightly after name */
   const subtitleOpacity = useTransform(
     scrollProgress,
-    [0.02, 0.08, 0.16, 0.22],
-    [0, 1, 1, 0]
+    [0, 0.16, 0.22],
+    [1, 1, 0]
   );
   const subtitleY = useTransform(
     scrollProgress,
-    [0.02, 0.08],
-    [25, 0]
+    [0, 0.16],
+    [0, 0]
   );
 
   /** Tagline fades in after subtitle */
   const taglineOpacity = useTransform(
     scrollProgress,
-    [0.04, 0.1, 0.16, 0.22],
-    [0, 1, 1, 0]
+    [0, 0.16, 0.22],
+    [1, 1, 0]
   );
   const taglineY = useTransform(
     scrollProgress,
-    [0.04, 0.1],
-    [20, 0]
+    [0, 0.16],
+    [0, 0]
   );
 
   /** Scroll indicator fades out as you start scrolling */
   const indicatorOpacity = useTransform(
     scrollProgress,
-    [0, 0.03, 0.08],
-    [0, 1, 0]
+    [0, 0.08],
+    [1, 0]
   );
 
   /** Glow orb scale & opacity — breathes with scroll */
   const glowScale = useTransform(
     scrollProgress,
-    [0, 0.06, 0.18, 0.24],
-    [0.6, 1.1, 1.2, 0.4]
+    [0, 0.18, 0.24],
+    [1.1, 1.2, 0.4]
   );
   const glowOpacity = useTransform(
     scrollProgress,
-    [0, 0.05, 0.16, 0.24],
-    [0, 0.6, 0.8, 0]
+    [0, 0.16, 0.24],
+    [0.6, 0.8, 0]
   );
 
   return (
@@ -233,7 +233,7 @@ function HeroSection({
         style={{ opacity: indicatorOpacity }}
       >
         <span className="text-[9px] font-mono tracking-[0.35em] uppercase text-graphite-500">
-          Scroll to explore
+          Scroll to unlock
         </span>
         <motion.div
           className="w-[1px] h-10 bg-gradient-to-b from-graphite-400 to-transparent origin-top"

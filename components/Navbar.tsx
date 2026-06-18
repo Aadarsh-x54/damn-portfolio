@@ -10,6 +10,8 @@ import { motion, AnimatePresence } from "framer-motion";
 const links = [
   { id: "hero", label: "About" },
   { id: "projects", label: "Projects" },
+  { id: "skills", label: "Skills" },
+  { id: "journey", label: "Journey" },
   { id: "contact", label: "Contact" },
 ] as const;
 
@@ -33,7 +35,7 @@ export default function Navbar() {
     setIsVisible(window.scrollY > window.innerHeight * 0.5);
 
     // Walk sections bottom-up to find the topmost one in view
-    const sectionIds = ["contact", "projects", "hero"];
+    const sectionIds = ["contact", "journey", "skills", "projects", "hero"];
     for (const id of sectionIds) {
       const el = document.getElementById(id);
       if (el) {

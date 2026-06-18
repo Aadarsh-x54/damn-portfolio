@@ -7,6 +7,8 @@ import CursorGlow from "@/components/CursorGlow";
 import ScrollyCanvas from "@/components/ScrollyCanvas";
 import Overlay from "@/components/Overlay";
 import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
+import Journey from "@/components/Journey";
 import Footer from "@/components/Footer";
 
 /**
@@ -39,6 +41,12 @@ export default function Home() {
 
       {/* Projects section */}
       <Projects />
+
+      {/* Skills section */}
+      <Skills />
+
+      {/* Journey section */}
+      <Journey />
 
       {/* Cosmic footer */}
       <Footer />
