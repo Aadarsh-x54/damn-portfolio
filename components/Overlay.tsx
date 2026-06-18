@@ -169,9 +169,8 @@ function HeroSection({
         className="text-[10px] sm:text-xs font-mono tracking-[0.35em] uppercase text-graphite-400 mb-5"
         style={{ opacity: subtitleOpacity, y: subtitleY }}
       >
-        Software Engineer{" "}
-        <span className="text-electric-500/60 mx-1">•</span> AI Systems
-        Developer
+        AI / ML Systems Engineer{" "}
+        <span className="text-electric-500/60 mx-1">•</span> Backend Architect
       </motion.p>
 
       {/* ── First name — letter-by-letter stagger ── */}
@@ -223,8 +222,7 @@ function HeroSection({
         className="mt-6 sm:mt-8 max-w-lg text-sm sm:text-base text-graphite-300 font-light leading-relaxed"
         style={{ opacity: taglineOpacity, y: taglineY }}
       >
-        Building scalable backend systems, AI products, and immersive digital
-        experiences.
+        Designing neural workflows, custom LLM agents, and high-performance ML pipelines.
       </motion.p>
 
       {/* ── Scroll indicator ── */}
@@ -340,10 +338,10 @@ function AISystemsSection({
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-[1.1] mb-6"
           style={{ opacity: headlineOpacity }}
         >
-          I build{" "}
-          <span className="text-gradient">AI&#8209;powered</span>
+          I engineer{" "}
+          <span className="text-gradient">intelligent</span>
           <br />
-          systems.
+          ML systems.
         </motion.h2>
 
         {/* ── Body copy ── */}
@@ -351,9 +349,7 @@ function AISystemsSection({
           className="text-sm sm:text-base text-graphite-300 leading-relaxed mb-10 max-w-md"
           style={{ opacity: bodyOpacity, y: bodyY }}
         >
-          From multi-model AI SaaS platforms to distributed workflow engines, I
-          engineer software that blends intelligence, scalability, and
-          performance.
+          From LLM orchestration and multi-model SaaS to custom agentic workflows, I build scalable ML infrastructure that bridges deep learning and production.
         </motion.p>
 
         {/* ── Tech pills ── */}
@@ -509,12 +505,12 @@ function BridgeSection({
 
 /** Professional capability labels */
 const CAPABILITIES = [
-  "Backend Engineering",
-  "Generative AI",
-  "System Design",
-  "Scalable Products",
-  "Data Structures",
-  "IoT Integrations",
+  "Machine Learning",
+  "Generative AI & LLMs",
+  "MLOps & Scalability",
+  "Agentic Workflows",
+  "Distributed Systems",
+  "Model Evaluation",
 ];
 
 function FutureSection({

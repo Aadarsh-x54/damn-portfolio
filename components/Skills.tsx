@@ -12,6 +12,35 @@ interface SkillCategory {
 
 const skillCategories: SkillCategory[] = [
   {
+    title: "AI / Machine Learning",
+    skills: [
+      "Machine Learning",
+      "Deep Learning",
+      "NLP",
+      "Computer Vision",
+      "Generative AI",
+      "Model Evaluation",
+    ],
+    glowColor: "rgba(168, 85, 247, 0.15)", // Purple
+    borderColor: "rgba(168, 85, 247, 0.3)",
+    icon: (
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="text-purple-400"
+      >
+        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+        <circle cx="12" cy="12" r="10" />
+      </svg>
+    ),
+  },
+  {
     title: "Languages",
     skills: ["Java", "Python", "C++", "JavaScript", "SQL"],
     glowColor: "rgba(99, 102, 241, 0.15)", // Indigo
@@ -65,58 +94,6 @@ const skillCategories: SkillCategory[] = [
     ),
   },
   {
-    title: "AI / Machine Learning",
-    skills: [
-      "Machine Learning",
-      "Deep Learning",
-      "NLP",
-      "Computer Vision",
-      "Generative AI",
-      "Model Evaluation",
-    ],
-    glowColor: "rgba(168, 85, 247, 0.15)", // Purple
-    borderColor: "rgba(168, 85, 247, 0.3)",
-    icon: (
-      <svg
-        width="20"
-        height="20"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="text-purple-400"
-      >
-        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-        <circle cx="12" cy="12" r="10" />
-      </svg>
-    ),
-  },
-  {
-    title: "Databases & Storage",
-    skills: ["MySQL", "PostgreSQL", "MongoDB", "SQLite", "H2"],
-    glowColor: "rgba(6, 182, 212, 0.15)", // Cyan
-    borderColor: "rgba(6, 182, 212, 0.3)",
-    icon: (
-      <svg
-        width="20"
-        height="20"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="text-cyan-400"
-      >
-        <ellipse cx="12" cy="5" rx="9" ry="3" />
-        <path d="M3 5V19A9 3 0 0 0 21 19V5" />
-        <path d="M3 12A9 3 0 0 0 21 12" />
-      </svg>
-    ),
-  },
-  {
     title: "DevOps & Cloud",
     skills: [
       "Docker",
@@ -143,6 +120,29 @@ const skillCategories: SkillCategory[] = [
         className="text-blue-400"
       >
         <path d="M17.5 19A3.5 3.5 0 0 0 21 15.5c0-2.79-2.54-4.5-5-4.5-.42-3.32-3.08-6-6.5-6C5.58 5 3 7.58 3 11c-1.5 0-3 1.5-3 3.5C0 17 1.5 19 4 19h13.5Z" />
+      </svg>
+    ),
+  },
+  {
+    title: "Databases & Storage",
+    skills: ["MySQL", "PostgreSQL", "MongoDB", "SQLite", "H2"],
+    glowColor: "rgba(6, 182, 212, 0.15)", // Cyan
+    borderColor: "rgba(6, 182, 212, 0.3)",
+    icon: (
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="text-cyan-400"
+      >
+        <ellipse cx="12" cy="5" rx="9" ry="3" />
+        <path d="M3 5V19A9 3 0 0 0 21 19V5" />
+        <path d="M3 12A9 3 0 0 0 21 12" />
       </svg>
     ),
   },
